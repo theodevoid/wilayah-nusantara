@@ -9,8 +9,8 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "dev": "nest start --watch",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start": "NODE_ENV=development nest start",
+    "start:dev": "NODE_ENV=development nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
@@ -22,9 +22,11 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^2.3.2",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/typeorm": "^9.0.1",
+    "joi": "^17.9.2",
     "mysql2": "^3.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
@@ -53,7 +55,7 @@
     "ts-node": "^10.0.0",
     "tsconfig": "workspace:*",
     "tsconfig-paths": "4.2.0",
-    "typescript": "^5.0.0"
+    "typescript": "^4.3.5"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -70,6 +72,9 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/../src/$1"
+    }
   }
 }

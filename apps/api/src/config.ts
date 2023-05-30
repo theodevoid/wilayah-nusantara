@@ -1,9 +1,20 @@
-import { registerAs } from '@nestjs/config';
+import { get } from 'env-var';
+import { loadEnv } from './env';
 
-export default registerAs('config', () => {
-  return {
-    mysql: {
-      databaseUrl: process.env.DATABASE_URL,
-    },
-  };
-});
+loadEnv();
+
+export const getRequired = (env: string) => get(env).required();
+
+export const config = {
+  get appEnv() {
+    return getRequired('APP_ENV').asEnum([
+      'test',
+      'development',
+      'staging',
+      'production',
+    ]);
+  },
+  get dbUrl() {
+    return getRequired('DATABASE_URL').asString();
+  },
+};

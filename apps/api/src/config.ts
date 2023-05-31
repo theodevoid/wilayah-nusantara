@@ -14,6 +14,13 @@ export const config = {
       'production',
     ]);
   },
+  get nodeEnv() {
+    return getRequired('NODE_ENV').asEnum([
+      'development',
+      'test',
+      'production',
+    ]);
+  },
   get dbUrl() {
     return getRequired('DATABASE_URL').asString();
   },

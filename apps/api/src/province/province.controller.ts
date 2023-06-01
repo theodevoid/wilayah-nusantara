@@ -1,12 +1,24 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ProvinceService } from './province.service';
+import { GetProvincesDTO } from './dtos/get-provinces.dto';
 
 @Controller('/provinsi')
 export class ProvinceController {
   constructor(private readonly provinceService: ProvinceService) {}
 
   @Get('/')
-  public async getHello() {
-    return await this.provinceService.getProvinces();
+  public async getProvinces(@Query() getProvincesQuery: GetProvincesDTO) {
+    const provinces = await this.provinceService.getProvinces(
+      getProvincesQuery,
+    );
+
+    return provinces;
+  }
+
+  @Get('/:id')
+  public async getProvince(@Param('id') provinceId: string) {
+    const provinces = await this.provinceService.getProvince(provinceId);
+
+    return provinces;
   }
 }

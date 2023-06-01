@@ -3,12 +3,6 @@ Wilayah Nusantara is an open source API that provides access to Indonesian provi
 
 For full documentation visit https://docs.wilayah-nusantara.id
 
-## Features
-- Comprehensive Data: Wilayah Nusantara API offers a comprehensive collection of Indonesian province, regencies, districts, and villages data, providing accurate and up-to-date information.
-- Easy Integration: The API is designed to be easy to integrate into various applications or projects, making it simple to access location data without extensive development efforts.
-- Fast and Reliable: The API is built for speed and reliability, ensuring quick response times and minimal downtime.
-- Free to use: This is a public API and is free to use for everyone. However you can also choose to self-host it if you want.
-
 ## API Installation
 To run the API in your local machine, follow these steps:
 Clone the repository to your machine and install the needed dependencies. We use `pnpm` to manage our packages, so please make sure it is installed in your local machine.

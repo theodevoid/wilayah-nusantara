@@ -1,4 +1,12 @@
 {
-  "getting-started": "Getting Started",
-  "index": "Introduction"
+  "-": {
+    "type": "separator",
+    "title": "Getting Started"
+  },
+  "index": "Introduction",
+  "--": {
+    "type": "separator",
+    "title": "Endpoints"
+  },
+  "get-province": "GET /provinsi"
 }

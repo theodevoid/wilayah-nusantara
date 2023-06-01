@@ -17,8 +17,8 @@ export class ProvinceController {
 
   @Get('/:code')
   public async getProvince(@Param('code') provinceCode: string) {
-    const provinces = await this.provinceService.getProvince(provinceCode);
+    const province = await this.provinceService.getProvince(provinceCode);
 
-    return provinces;
+    return province;
   }
 }

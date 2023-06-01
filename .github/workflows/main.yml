@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: "12.x"
       - name: Run App
-        uses: appleboy/ssh-action@0.1.9
+        uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}

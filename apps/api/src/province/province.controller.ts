@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ProvinceService } from './province.service';
-import { GetProvincesDTO } from './dtos/get-provinces.dto';
+import { GetProvincesDTO } from '@wilayah-nusantara/dtos';
 
 @Controller('/provinsi')
 export class ProvinceController {

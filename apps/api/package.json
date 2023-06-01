@@ -42,7 +42,8 @@
     "joi": "^17.9.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
-    "typeorm": "^0.3.16"
+    "typeorm": "^0.3.16",
+    "@wilayah-nusantara/dtos": "*"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

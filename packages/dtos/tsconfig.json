@@ -9,7 +9,6 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
@@ -18,11 +17,8 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
-    "paths": {
-      "~/*": ["./src/*"]
-    },
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
-  "include": ["src/**/*.ts", "node_modules/@wilaya-nusantara/dtos"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules", ".vscode"]
 }

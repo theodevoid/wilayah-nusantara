@@ -1,6 +1,5 @@
-import { PaginationDTO } from '~/pagination/dto/pagination.dto';
 import { IsString, IsOptional } from 'class-validator';
-import { Transform } from 'class-transformer';
+import { PaginationDTO } from '../pagination/pagination.dto';
 
 export class GetProvincesDTO extends PaginationDTO {
   @IsString()

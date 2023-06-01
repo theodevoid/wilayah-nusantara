@@ -55,6 +55,9 @@ importers:
       '@types/dotenv-flow':
         specifier: ^3.2.0
         version: 3.2.0
+      '@wilayah-nusantara/dtos':
+        specifier: '*'
+        version: link:../../packages/dtos
       class-transformer:
         specifier: ^0.5.1
         version: 0.5.1
@@ -221,6 +224,19 @@ importers:
         version: link:../../packages/tsconfig
       typescript:
         specifier: ^4.5.3
+        version: 4.9.5
+
+  packages/dtos:
+    dependencies:
+      class-transformer:
+        specifier: ^0.5.1
+        version: 0.5.1
+      class-validator:
+        specifier: ^0.14.0
+        version: 0.14.0
+    devDependencies:
+      typescript:
+        specifier: ^4.3.5
         version: 4.9.5
 
   packages/eslint-config-custom:

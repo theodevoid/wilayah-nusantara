@@ -1,5 +1,5 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
-import { GetRegenciesDTO } from './dtos/get-regencies.dto';
+import { GetRegenciesDTO } from '@wilayah-nusantara/dtos';
 import { RegencyService } from './regency.service';
 
 @Controller('/kabupaten')

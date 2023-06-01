@@ -1,9 +1,9 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { RegencyRepository } from './regency.repository';
-import { GetRegenciesDTO } from './dtos/get-regencies.dto';
-import { FilterQuery, EntityManager } from '@mikro-orm/core';
+import { FilterQuery } from '@mikro-orm/core';
 import { Regency } from './regency.entity';
 import { ProvinceRepository } from '~/province/province.repository';
+import { GetRegenciesDTO } from '@wilayah-nusantara/dtos';
 
 @Injectable()
 export class RegencyService {

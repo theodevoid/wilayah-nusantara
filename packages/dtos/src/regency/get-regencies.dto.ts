@@ -1,5 +1,5 @@
 import { IsString, IsOptional } from 'class-validator';
-import { PaginationDTO } from '~/pagination/dto/pagination.dto';
+import { PaginationDTO } from '../pagination/pagination.dto';
 
 export class GetRegenciesDTO extends PaginationDTO {
   @IsString()

@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { ProvinceRepository } from './province.repository';
-import { GetProvincesDTO } from './dtos/get-provinces.dto';
 import { FilterQuery } from '@mikro-orm/core';
 import { Province } from './province.entity';
+import { GetProvincesDTO } from '@wilayah-nusantara/dtos';
 
 @Injectable()
 export class ProvinceService {

@@ -10,6 +10,7 @@ import { MikroOrmMiddleware, MikroOrmModule } from '@mikro-orm/nestjs';
 import mikroOrmConfig from './mikro-orm.config';
 import { MikroORM } from '@mikro-orm/core';
 import { ProvinceModule } from './province/province.module';
+import { RegencyModule } from './regency/regency.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { ProvinceModule } from './province/province.module';
       ...mikroOrmConfig,
     }),
     ProvinceModule,
+    RegencyModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -11,6 +11,7 @@ import mikroOrmConfig from './mikro-orm.config';
 import { MikroORM } from '@mikro-orm/core';
 import { ProvinceModule } from './province/province.module';
 import { RegencyModule } from './regency/regency.module';
+import { DistrictModule } from './district/district.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { RegencyModule } from './regency/regency.module';
     }),
     ProvinceModule,
     RegencyModule,
+    DistrictModule,
   ],
   controllers: [AppController],
   providers: [AppService],

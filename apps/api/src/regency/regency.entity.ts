@@ -6,6 +6,8 @@ import {
   BigIntType,
   ManyToOne,
   Ref,
+  PrimaryKeyProp,
+  PrimaryKeyType,
 } from '@mikro-orm/core';
 import { RegencyRepository } from './regency.repository';
 import { Province } from '~/province/province.entity';
@@ -13,6 +15,8 @@ import { Province } from '~/province/province.entity';
 @Entity({ tableName: 'regencies', customRepository: () => RegencyRepository })
 export class Regency {
   [EntityRepositoryType]?: RegencyRepository;
+  [PrimaryKeyProp]?: 'code';
+  [PrimaryKeyType]?: string;
 
   @PrimaryKey({
     type: BigIntType,

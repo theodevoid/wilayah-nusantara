@@ -43,9 +43,9 @@ export class ProvinceService {
     };
   }
 
-  public async getProvince(provinceId: string) {
+  public async getProvince(provinceCode: string) {
     const province = await this.provinceRepo.findOne({
-      id: provinceId,
+      code: provinceCode,
     });
 
     if (!province) {

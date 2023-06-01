@@ -18,4 +18,5 @@ __exportStar(require("./pagination/pagination.dto"), exports);
 __exportStar(require("./province/get-provinces.dto"), exports);
 __exportStar(require("./regency/get-regencies.dto"), exports);
 __exportStar(require("./district/get-districts.dto"), exports);
+__exportStar(require("./village/get-villages.dto"), exports);
 //# sourceMappingURL=index.js.map

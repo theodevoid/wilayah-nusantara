@@ -20,5 +20,5 @@
     "moduleResolution": "node"
   },
   "include": ["./**/*.ts"],
-  "exclude": ["node_modules", ".vscode"]
+  "exclude": ["node_modules", ".vscode", "./dist/**/*"]
 }

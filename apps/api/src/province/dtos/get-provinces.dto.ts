@@ -1,5 +1,5 @@
 import { PaginationDTO } from '~/pagination/dto/pagination.dto';
-import { IsString, IsOptional, IsNumber } from 'class-validator';
+import { IsString, IsOptional } from 'class-validator';
 import { Transform } from 'class-transformer';
 
 export class GetProvincesDTO extends PaginationDTO {
@@ -7,8 +7,7 @@ export class GetProvincesDTO extends PaginationDTO {
   @IsOptional()
   readonly province: string;
 
-  @IsNumber()
+  @IsString()
   @IsOptional()
-  @Transform(({ value }) => parseInt(value))
-  readonly code: number;
+  readonly code: string;
 }

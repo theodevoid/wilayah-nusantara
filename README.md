@@ -9,7 +9,7 @@ Wilayah Nusantara is an open source API that provides access to Indonesian provi
 
 ## API Installation
 To run the API in your local machine, follow these steps:
-1. Clone the repository to your machine and install the needed dependencies. We use `pnpm` to manage our packages, so please make sure it is installed in your local machine.
+Clone the repository to your machine and install the needed dependencies. We use `pnpm` to manage our packages, so please make sure it is installed in your local machine.
 ```
 git clone https://github.com/theodevoid/wilayah-nusantara.git
 
@@ -17,13 +17,13 @@ cd wilayah-nusantara
 
 pnpm install
 ```
-2. Start up a docker container running MySQL. A `docker-compose` file is provided to make this easier.
+Start up a docker container running MySQL. A `docker-compose` file is provided to make this easier.
 ```
 // inside apps/api
 
 docker compose up
 ```
-3. Run migrations
+Run migrations
 Linux or Mac
 ```
 pnpm mikro-orm migration:up
@@ -33,8 +33,8 @@ For windows, we need to use `cross-env`. The script has also been provided.
 ```
 pnpm cross:mikro-orm migration:up
 ```
-4. Import data from the `/data` folder to your database. We recommend using a GUI like MySQL Workbench, or DBeaver to make this easier.
-5. Run the API
+Import data from the `/data` folder to your database. We recommend using a GUI like MySQL Workbench, or DBeaver to make this easier.
+Run the API
 Linux or Mac
 ```
 // for development
@@ -57,3 +57,8 @@ We welcome contributions from the open source community. To contribute to the Wi
 3. Make your changes and ensure that the codebase remains clean and follows best practices.
 4. Don't forget to create migrations if there are any database changes.
 5. Submit a pull request describing your changes and explaining the rationale behind them.
+
+## Roadmap
+[] Update to latest data
+[] Include postal code
+[] Include latitude and longitude

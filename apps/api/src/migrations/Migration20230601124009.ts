@@ -9,9 +9,9 @@ export class Migration20230601124009 extends Migration {
       'alter table `regencies` add index `regencies_province_code_index`(`province_code`);',
     );
 
-    this.addSql(
-      'alter table `regencies` add constraint `regencies_province_code_foreign` foreign key (`province_code`) references `provinces` (`code`) on update cascade;',
-    );
+    // this.addSql(
+    //   'alter table `regencies` add constraint `regencies_province_code_foreign` foreign key (`province_code`) references `provinces` (`code`) on update cascade;',
+    // );
   }
 
   async down(): Promise<void> {

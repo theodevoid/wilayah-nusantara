@@ -52,7 +52,8 @@ We welcome contributions from the open source community. To contribute to the Wi
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and ensure that the codebase remains clean and follows best practices.
 4. Don't forget to create migrations if there are any database changes.
-5. Submit a pull request describing your changes and explaining the rationale behind them.
+5. Don't forget to build the `dto` package if you made any DTO changes
+6. Submit a pull request describing your changes and explaining the rationale behind them.
 
 ## Roadmap
 - [ ] Update to latest data

@@ -6,7 +6,7 @@ For full documentation visit https://docs.wilayah-nusantara.id
 ## API Installation
 To run the API in your local machine, follow these steps:
 Clone the repository to your machine and install the needed dependencies. We use `pnpm` to manage our packages, so please make sure it is installed in your local machine.
-```
+```bash
 git clone https://github.com/theodevoid/wilayah-nusantara.git
 
 cd wilayah-nusantara
@@ -14,34 +14,34 @@ cd wilayah-nusantara
 pnpm install
 ```
 Start up a docker container running MySQL. A `docker-compose` file is provided to make this easier.
-```
-// inside apps/api
+```bash
+# inside apps/api
 
 docker compose up
 ```
 Run migrations
 Linux or Mac
-```
+```bash
 pnpm mikro-orm migration:up
 ```
 
 For windows, we need to use `cross-env`. The script has also been provided.
-```
+```bash
 pnpm cross:mikro-orm migration:up
 ```
 Import data from the `/data` folder to your database. We recommend using a GUI like MySQL Workbench, or DBeaver to make this easier.
 Run the API
 Linux or Mac
-```
-// for development
+```bash
+# for development
 pnpm dev
 
-// for production
+# for production
 pnpm build
 pnpm start:prod
 ```
 Windows
-```
+```bash
 pnpm cross:dev
 ```
 

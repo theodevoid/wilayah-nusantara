@@ -6,3 +6,6 @@ export * from './province/get-provinces.dto';
 
 // regency
 export * from './regency/get-regencies.dto';
+
+// district
+export * from './district/get-districts.dto'

@@ -59,6 +59,6 @@ We welcome contributions from the open source community. To contribute to the Wi
 5. Submit a pull request describing your changes and explaining the rationale behind them.
 
 ## Roadmap
-[] Update to latest data
-[] Include postal code
-[] Include latitude and longitude
+[ ] Update to latest data
+[ ] Include postal code
+[ ] Include latitude and longitude

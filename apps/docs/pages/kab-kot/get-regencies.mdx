@@ -1,0 +1,162 @@
+import { Callout } from 'nextra/components';
+
+# Get List of Kabupaten/Kota
+
+Fetches a list of regencies.
+
+### Endpoint
+
+```md filename="Base URL"
+https://api.wilayah-nusantara.id
+
+or, if running on local
+
+http://localhost:1945
+```
+
+```md filename="Method and Endpoint"
+GET /kabupaten
+```
+
+### Query Params
+
+#### Filtering
+
+##### `name` : string (optional)
+
+Name of regency. Uses a `LIKE` SQL Query behind the scenes. This results in regency name substring matches being returned as well. Oh, and it's case insensitive.
+
+##### `code` : string (optional)
+
+Area code of a regency. Using this parameter will override all other filters.
+
+#### `provinsiCode` : string (optional)
+
+Area code of its parent province.
+
+#### Pagination
+
+##### `page` : number (optional)
+
+Page number to be fetched. This will have a default value of `1` when a value is not given.
+
+##### `limit` : number (optional)
+
+Number of data to be fetched inside a single page. This will have a default value of `10` when a value is not given.
+
+#### Sorting
+
+Not yet supported. Very open to contributions if you want to add this feature 😀.
+
+### Responses
+
+#### Meta
+
+We provide a `meta` object for paginable response data lists. They should be self explanatory, however here's a brief explanation.
+
+- `limit`: The number maximum total data in a single page.
+- `page`: The current page.
+- `total`: The number of total data that matches the given filters. Not just the number of data present in a single page.
+
+#### 200 (success)
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/kabupaten?name=rang
+```
+
+```json filename="Example Response"
+{
+  "data": [
+    {
+      "code": "1502",
+      "province": "15",
+      "regency": "KABUPATEN MERANGIN"
+    },
+    {
+      "code": "3313",
+      "province": "33",
+      "regency": "KABUPATEN KARANGANYAR"
+    },
+    {
+      "code": "3322",
+      "province": "33",
+      "regency": "KABUPATEN SEMARANG"
+    },
+    {
+      "code": "3374",
+      "province": "33",
+      "regency": "KOTA SEMARANG"
+    },
+    {
+      "code": "3603",
+      "province": "36",
+      "regency": "KABUPATEN TANGERANG"
+    },
+    {
+      "code": "3604",
+      "province": "36",
+      "regency": "KABUPATEN SERANG"
+    },
+    {
+      "code": "3671",
+      "province": "36",
+      "regency": "KOTA TANGERANG"
+    },
+    {
+      "code": "3673",
+      "province": "36",
+      "regency": "KOTA SERANG"
+    },
+    {
+      "code": "3674",
+      "province": "36",
+      "regency": "KOTA TANGERANG SELATAN"
+    },
+    {
+      "code": "5107",
+      "province": "51",
+      "regency": "KABUPATEN KARANG ASEM"
+    }
+  ],
+  "meta": {
+    "limit": 10,
+    "page": 1,
+    "total": 11
+  }
+}
+```
+
+<Callout>
+  Filters not matching any data will still result in a successful (200)
+  response. However the `data` object will be empty.
+</Callout>
+
+#### Using the `code` query parameter (200)
+
+When using the `code` parameter, the response will be a singular object containing the regency data itself. This was done because `code` is a unique property that only 1 regency can have.
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/kabupaten?code=3602
+```
+
+```json filename="Example Response"
+{
+  "code": "3602",
+  "province": "36",
+  "regency": "KABUPATEN LEBAK"
+}
+```
+
+<Callout>
+  If no record matches the `code` parameter, a `null` object will be returned as
+  a response.
+</Callout>
+
+#### 500 (server error)
+
+```json filename="Example Response"
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```

@@ -6,7 +6,10 @@
   "index": "Introduction",
   "--": {
     "type": "separator",
-    "title": "Endpoints"
+    "title": "Features"
   },
-  "get-province": "GET /provinsi"
+  "provinsi": "Provinsi (Province)",
+  "kab-kot": "Kabupaten/Kota (Regency)",
+  "kecamatan": "Kecamatan (District)",
+  "desa-kelurahan": "Desa/Kelurahan (Village)"
 }

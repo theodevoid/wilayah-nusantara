@@ -1,0 +1,59 @@
+import { Callout } from 'nextra/components';
+
+# Get Regency by Area Code
+
+Fetches a regency based on its area code.
+
+### Endpoint
+
+```md filename="Base URL"
+https://api.wilayah-nusantara.id
+
+or, if running on local
+
+http://localhost:1945
+```
+
+```md filename="Method and Endpoint"
+GET /kabupaten/{code}
+```
+
+### Route Params
+
+##### `code` : string (required)
+
+Area code of a regency.
+
+### Responses
+
+#### 200 (success)
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/kabupaten/3602
+```
+
+```json filename="Example Response"
+{
+  "code": "3602",
+  "province": "36",
+  "regency": "KABUPATEN LEBAK"
+}
+```
+
+#### 404 (not found)
+
+```json filename="Example Response"
+{
+  "statusCode": 404,
+  "message": "regency not found"
+}
+```
+
+#### 500 (server error)
+
+```json filename="Example Response"
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```

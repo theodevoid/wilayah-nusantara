@@ -29,4 +29,14 @@ export default {
       </>
     );
   },
+  banner: {
+    text: (
+      <p>
+        The current data is accurate only up to <strong>2019.</strong>
+      </p>
+    ),
+  },
+  footer: {
+    text: <span>MIT {new Date().getFullYear()} © VoidFnc.</span>,
+  },
 };

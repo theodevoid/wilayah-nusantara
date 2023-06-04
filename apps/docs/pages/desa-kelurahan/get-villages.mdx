@@ -1,0 +1,162 @@
+import { Callout } from 'nextra/components';
+
+# Get List of Kelurahan/Desa
+
+Fetches a list of villages.
+
+### Endpoint
+
+```md filename="Base URL"
+https://api.wilayah-nusantara.id
+
+or, if running on local
+
+http://localhost:1945
+```
+
+```md filename="Method and Endpoint"
+GET /kecamatan
+```
+
+### Query Params
+
+#### Filtering
+
+##### `name` : string (optional)
+
+Name of village. Uses a `LIKE` SQL Query behind the scenes. This results in village name substring matches being returned as well. Oh, and it's case insensitive.
+
+##### `code` : string (optional)
+
+Area code of a village. Using this parameter will override all other filters.
+
+#### `kecamatanCode` : string (optional)
+
+Area code of its parent district.
+
+#### Pagination
+
+##### `page` : number (optional)
+
+Page number to be fetched. This will have a default value of `1` when a value is not given.
+
+##### `limit` : number (optional)
+
+Number of data to be fetched inside a single page. This will have a default value of `10` when a value is not given.
+
+#### Sorting
+
+Not yet supported. Very open to contributions if you want to add this feature 😀.
+
+### Responses
+
+#### Meta
+
+We provide a `meta` object for paginable response data lists. They should be self explanatory, however here's a brief explanation.
+
+- `limit`: The number maximum total data in a single page.
+- `page`: The current page.
+- `total`: The number of total data that matches the given filters. Not just the number of data present in a single page.
+
+#### 200 (success)
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/kelurahan?name=badak
+```
+
+```json filename="Example Response"
+{
+  "data": [
+    {
+      "code": "1106040022",
+      "district": "1106040",
+      "village": "ARUL BADAK"
+    },
+    {
+      "code": "1106041010",
+      "district": "1106041",
+      "village": "SIMPANG LUKUP BADAK"
+    },
+    {
+      "code": "1113022004",
+      "district": "1113022",
+      "village": "BADAK"
+    },
+    {
+      "code": "1203011032",
+      "district": "1203011",
+      "village": "AEK BADAK JULU"
+    },
+    {
+      "code": "1203011033",
+      "district": "1203011",
+      "village": "AEK BADAK JAE"
+    },
+    {
+      "code": "1274011006",
+      "district": "1274011",
+      "village": "BADAK BEJUANG"
+    },
+    {
+      "code": "1305050001",
+      "district": "1305050",
+      "village": "CUBADAK"
+    },
+    {
+      "code": "1309100001",
+      "district": "1309100",
+      "village": "CUBADAK"
+    },
+    {
+      "code": "1309111004",
+      "district": "1309111",
+      "village": "PERSIAPAN SONTANG CUBADAK"
+    },
+    {
+      "code": "1377021013",
+      "district": "1377021",
+      "village": "CUBADAK MENTAWAI"
+    }
+  ],
+  "meta": {
+    "limit": 10,
+    "page": 1,
+    "total": 53
+  }
+}
+```
+
+<Callout>
+  Filters not matching any data will still result in a successful (200)
+  response. However the `data` object will be empty.
+</Callout>
+
+#### Using the `code` query parameter (200)
+
+When using the `code` parameter, the response will be a singular object containing the village data itself. This was done because `code` is a unique property that only 1 village can have.
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/kelurahan?code=1106063011
+```
+
+```json filename="Example Response"
+{
+  "code": "1106063011",
+  "district": "1106063",
+  "village": "KERAWANG"
+}
+```
+
+<Callout>
+  If no record matches the `code` parameter, a `null` object will be returned as
+  a response.
+</Callout>
+
+#### 500 (server error)
+
+```json filename="Example Response"
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```

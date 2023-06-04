@@ -1,6 +1,7 @@
 import { Callout } from 'nextra/components';
 
 # Get List of Provinsi
+
 Fetches a list of provinces.
 
 ### Endpoint
@@ -23,7 +24,7 @@ GET /provinsi
 
 ##### `name` : string (optional)
 
-Name of province. Uses a `LIKE` SQL Query behind the scenes. This  results in province name substring matches will be returned as well. Oh, and it's case insensitive.
+Name of province. Uses a `LIKE` SQL Query behind the scenes. This results in province name substring matches being returned as well. Oh, and it's case insensitive.
 
 ##### `code` : string (optional)
 
@@ -85,7 +86,8 @@ GET https://api.wilayah-nusantara.id/provinsi?name=ban
 </Callout>
 
 #### Using the `code` query parameter (200)
-When using the `code` parameter, the response will be a singular object containing the province data itself. This was done because `code`  is a unique property that only 1 province can have.
+
+When using the `code` parameter, the response will be a singular object containing the province data itself. This was done because `code` is a unique property that only 1 province can have.
 
 ```md filename="Example Request"
 GET https://api.wilayah-nusantara.id/provinsi?code=36
@@ -97,6 +99,11 @@ GET https://api.wilayah-nusantara.id/provinsi?code=36
   "province": "BANTEN"
 }
 ```
+
+<Callout>
+  If no record matches the `code` parameter, a `null` object will be returned as
+  a response.
+</Callout>
 
 #### 500 (server error)
 

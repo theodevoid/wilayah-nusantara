@@ -1,0 +1,59 @@
+import { Callout } from 'nextra/components';
+
+# Get Village by Area Code
+
+Fetches a village based on its area code.
+
+### Endpoint
+
+```md filename="Base URL"
+https://api.wilayah-nusantara.id
+
+or, if running on local
+
+http://localhost:1945
+```
+
+```md filename="Method and Endpoint"
+GET /kelurahan/{code}
+```
+
+### Route Params
+
+##### `code` : string (required)
+
+Area code of a village.
+
+### Responses
+
+#### 200 (success)
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/kelurahan/1106040022
+```
+
+```json filename="Example Response"
+{
+  "code": "1106040022",
+  "district": "1106040",
+  "village": "ARUL BADAK"
+}
+```
+
+#### 404 (not found)
+
+```json filename="Example Response"
+{
+  "statusCode": 404,
+  "message": "village not found"
+}
+```
+
+#### 500 (server error)
+
+```json filename="Example Response"
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```

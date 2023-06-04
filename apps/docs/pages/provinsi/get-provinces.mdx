@@ -1,0 +1,108 @@
+import { Callout } from 'nextra/components';
+
+# Get List of Provinsi
+Fetches a list of provinces.
+
+### Endpoint
+
+```md filename="Base URL"
+https://api.wilayah-nusantara.id
+
+or, if running on local
+
+http://localhost:1945
+```
+
+```md filename="Method and Endpoint"
+GET /provinsi
+```
+
+### Query Params
+
+#### Filtering
+
+##### `name` : string (optional)
+
+Name of province. Uses a `LIKE` SQL Query behind the scenes. This  results in province name substring matches will be returned as well. Oh, and it's case insensitive.
+
+##### `code` : string (optional)
+
+Area code of a province.
+
+#### Pagination
+
+##### `page` : number (optional)
+
+Page number to be fetched. This will have a default value of `1` when a value is not given.
+
+##### `limit` : number (optional)
+
+Number of data to be fetched inside a single page. This will have a default value of `10` when a value is not given.
+
+#### Sorting
+
+Not yet supported. Very open to contributions if you want to add this feature 😀.
+
+### Responses
+
+#### Meta
+
+We provide a `meta` object for paginable response data lists. They should be self explanatory, however here's a brief explanation.
+
+- `limit`: The number maximum total data in a single page.
+- `page`: The current page.
+- `total`: The number of total data that matches the given filters. Not just the number of data present in a single page.
+
+#### 200 (success)
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/provinsi?name=ban
+```
+
+```json filename="Example Response"
+{
+  "data": [
+    {
+      "code": "19",
+      "province": "KEPULAUAN BANGKA BELITUNG"
+    },
+    {
+      "code": "36",
+      "province": "BANTEN"
+    }
+  ],
+  "meta": {
+    "limit": 10,
+    "page": 1,
+    "total": 2
+  }
+}
+```
+
+<Callout>
+  Filters not matching any data will still result in a successful (200)
+  response. However the `data` object will be empty.
+</Callout>
+
+#### Using the `code` query parameter (200)
+When using the `code` parameter, the response will be a singular object containing the province data itself. This was done because `code`  is a unique property that only 1 province can have.
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/provinsi?code=36
+```
+
+```json filename="Example Response"
+{
+  "code": "36",
+  "province": "BANTEN"
+}
+```
+
+#### 500 (server error)
+
+```json filename="Example Response"
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```

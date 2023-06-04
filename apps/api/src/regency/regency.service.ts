@@ -13,7 +13,7 @@ export class RegencyService {
   ) {}
 
   public async getRegencies(getRegenciesQuery: GetRegenciesDTO) {
-    const { limit, page, provinceCode, code, regency } = getRegenciesQuery;
+    const { limit, page, provinsiCode, code, name } = getRegenciesQuery;
 
     const whereClause: FilterQuery<Regency> = {};
 
@@ -23,14 +23,14 @@ export class RegencyService {
       });
     }
 
-    if (regency) {
+    if (name) {
       whereClause.regency = {
-        $like: `%${regency}%`,
+        $like: `%${name}%`,
       };
     }
 
-    if (provinceCode) {
-      whereClause.province = this.provinceRepo.getReference(provinceCode);
+    if (provinsiCode) {
+      whereClause.province = this.provinceRepo.getReference(provinsiCode);
     }
 
     const [regencies, regencyCount] = await this.regencyRepo.findAndCount(

@@ -13,7 +13,7 @@ export class DistrictService {
   ) {}
 
   public async getDistricts(getDistrictsQuery: GetDistrictsDTO) {
-    const { limit, page, code, district, regencyCode } = getDistrictsQuery;
+    const { limit, page, code, name, kabkotCode } = getDistrictsQuery;
 
     const whereClause: FilterQuery<District> = {};
 
@@ -23,14 +23,14 @@ export class DistrictService {
       });
     }
 
-    if (district) {
+    if (name) {
       whereClause.district = {
-        $like: `%${district}%`,
+        $like: `%${name}%`,
       };
     }
 
-    if (regencyCode) {
-      whereClause.regency = this.regencyRepo.getReference(regencyCode);
+    if (kabkotCode) {
+      whereClause.regency = this.regencyRepo.getReference(kabkotCode);
     }
 
     const [districts, districtCount] = await this.districtRepo.findAndCount(

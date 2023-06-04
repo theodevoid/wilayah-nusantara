@@ -18,7 +18,7 @@ __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
-], GetDistrictsDTO.prototype, "regencyCode", void 0);
+], GetDistrictsDTO.prototype, "kabkotCode", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
@@ -28,6 +28,6 @@ __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
-], GetDistrictsDTO.prototype, "district", void 0);
+], GetDistrictsDTO.prototype, "name", void 0);
 exports.GetDistrictsDTO = GetDistrictsDTO;
 //# sourceMappingURL=get-districts.dto.js.map

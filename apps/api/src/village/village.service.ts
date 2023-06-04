@@ -13,7 +13,7 @@ export class VillageService {
   ) {}
 
   public async getVillages(getVillagesQuery: GetVillagesDTO) {
-    const { limit, page, code, districtCode, village } = getVillagesQuery;
+    const { limit, page, code, kecamatanCode, name } = getVillagesQuery;
 
     const whereClause: FilterQuery<Village> = {};
 
@@ -23,14 +23,14 @@ export class VillageService {
       });
     }
 
-    if (village) {
+    if (name) {
       whereClause.village = {
-        $like: `%${village}%`,
+        $like: `%${name}%`,
       };
     }
 
-    if (districtCode) {
-      whereClause.district = this.districtRepo.getReference(districtCode);
+    if (kecamatanCode) {
+      whereClause.district = this.districtRepo.getReference(kecamatanCode);
     }
 
     const [villages, villageCount] = await this.villageRepo.findAndCount(

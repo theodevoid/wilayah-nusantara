@@ -18,7 +18,7 @@ __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
-], GetRegenciesDTO.prototype, "provinceCode", void 0);
+], GetRegenciesDTO.prototype, "provinsiCode", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
@@ -28,6 +28,6 @@ __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
-], GetRegenciesDTO.prototype, "regency", void 0);
+], GetRegenciesDTO.prototype, "name", void 0);
 exports.GetRegenciesDTO = GetRegenciesDTO;
 //# sourceMappingURL=get-regencies.dto.js.map

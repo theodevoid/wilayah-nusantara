@@ -4,7 +4,7 @@ import { PaginationDTO } from '../pagination/pagination.dto';
 export class GetProvincesDTO extends PaginationDTO {
   @IsString()
   @IsOptional()
-  readonly province: string;
+  readonly name: string;
 
   @IsString()
   @IsOptional()

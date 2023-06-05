@@ -1,6 +1,6 @@
 import { PaginationDTO } from '../pagination/pagination.dto';
 export declare class GetDistrictsDTO extends PaginationDTO {
-    readonly regencyCode: string;
+    readonly kabkotCode: string;
     readonly code: string;
-    readonly district: string;
+    readonly name: string;
 }

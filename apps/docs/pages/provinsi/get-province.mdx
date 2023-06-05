@@ -1,0 +1,58 @@
+import { Callout } from 'nextra/components';
+
+# Get Provinsi by Area Code
+
+Fetches a province based on its area code.
+
+### Endpoint
+
+```md filename="Base URL"
+https://api.wilayah-nusantara.id
+
+or, if running on local
+
+http://localhost:1945
+```
+
+```md filename="Method and Endpoint"
+GET /provinsi/{code}
+```
+
+### Route Params
+
+##### `code` : string (required)
+
+Area code of a province.
+
+### Responses
+
+#### 200 (success)
+
+```md filename="Example Request"
+GET https://api.wilayah-nusantara.id/provinsi/36
+```
+
+```json filename="Example Response"
+{
+  "code": "36",
+  "province": "BANTEN"
+}
+```
+
+#### 404 (not found)
+
+```json filename="Example Response"
+{
+  "statusCode": 404,
+  "message": "province not found"
+}
+```
+
+#### 500 (server error)
+
+```json filename="Example Response"
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```

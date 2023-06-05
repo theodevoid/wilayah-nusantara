@@ -9,7 +9,7 @@ export class ProvinceService {
   constructor(private readonly provinceRepo: ProvinceRepository) {}
 
   public async getProvinces(getProvincesQuery: GetProvincesDTO) {
-    const { limit, page, province, code } = getProvincesQuery;
+    const { limit, page, name, code } = getProvincesQuery;
 
     const whereClause: FilterQuery<Province> = {};
 
@@ -19,9 +19,9 @@ export class ProvinceService {
       });
     }
 
-    if (province) {
+    if (name) {
       whereClause.province = {
-        $like: `%${province}%`,
+        $like: `%${name}%`,
       };
     }
 

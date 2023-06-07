@@ -8,9 +8,11 @@ import {
   Ref,
   PrimaryKeyProp,
   PrimaryKeyType,
+  Enum,
 } from '@mikro-orm/core';
 import { RegencyRepository } from './regency.repository';
 import { Province } from '~/province/province.entity';
+import { RegencyType } from './types';
 
 @Entity({ tableName: 'regencies', customRepository: () => RegencyRepository })
 export class Regency {
@@ -28,4 +30,7 @@ export class Regency {
 
   @Property()
   regency: string;
+
+  @Enum(() => RegencyType)
+  type!: RegencyType;
 }

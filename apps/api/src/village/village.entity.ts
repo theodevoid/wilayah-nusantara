@@ -24,4 +24,7 @@ export class Village {
 
   @Property()
   village: string;
+
+  @Property()
+  postalCode: string;
 }

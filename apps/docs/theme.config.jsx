@@ -1,4 +1,6 @@
-export default {
+import { useRouter } from 'next/router';
+
+const config = {
   logo: <strong>Wilayah Nusantara</strong>,
   project: {
     link: 'https://github.com/theodevoid/wilayah-nusantara',
@@ -39,4 +41,20 @@ export default {
   footer: {
     text: <span>MIT {new Date().getFullYear()} © VoidFnc.</span>,
   },
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s – Wilayah Nusantara',
+        description: 'Wilayah Nusantara | %s',
+      };
+    }
+    return {
+      titleTemplate: 'Wilayah Nusantara - Data wilayah Indonesia',
+      description:
+        "Wilayah Nusantara provides data regarding Indonesia's region",
+    };
+  },
 };
+
+export default config;

@@ -26,7 +26,7 @@ jobs:
             git checkout main
             git pull origin main
             pnpm install
-            pnpm build
+            pnpm --filter=api build
             pnpm mikro-orm:prod migration:up
             pm2 start 0
         

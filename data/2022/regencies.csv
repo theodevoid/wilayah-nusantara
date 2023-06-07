@@ -1,0 +1,515 @@
+type,regency,province_code,,code
+Kabupaten,Aceh Barat,11,05,1105
+Kabupaten,Aceh Barat Daya,11,12,1112
+Kabupaten,Aceh Besar,11,06,1106
+Kabupaten,Aceh Jaya,11,14,1114
+Kabupaten,Aceh Selatan,11,01,1101
+Kabupaten,Aceh Singkil,11,10,1110
+Kabupaten,Aceh Tamiang,11,16,1116
+Kabupaten,Aceh Tengah,11,04,1104
+Kabupaten,Aceh Tenggara,11,02,1102
+Kabupaten,Aceh Timur,11,03,1103
+Kabupaten,Aceh Utara,11,08,1108
+Kabupaten,Agam,13,06,1306
+Kabupaten,Alor,53,05,5305
+Kota,Ambon,81,71,8171
+Kabupaten,Asahan,12,09,1209
+Kabupaten,Asmat,93,04,9304
+Kabupaten,Badung,51,03,5103
+Kabupaten,Balangan,63,11,6311
+Kota,Balikpapan,64,71,6471
+Kota,Banda Aceh,11,71,1171
+Kota,Bandar Lampung,18,71,1871
+Kota,Bandung,32,73,3273
+Kabupaten,Bandung,32,04,3204
+Kabupaten,Bandung Barat,32,17,3217
+Kabupaten,Banggai,72,01,7201
+Kabupaten,Banggai Kepulauan,72,07,7207
+Kabupaten,Banggai Laut,72,11,7211
+Kabupaten,Bangka,19,01,1901
+Kabupaten,Bangka Barat,19,05,1905
+Kabupaten,Bangka Selatan,19,03,1903
+Kabupaten,Bangka Tengah,19,04,1904
+Kabupaten,Bangkalan,35,26,3526
+Kabupaten,Bangli,51,06,5106
+Kota,Banjar,32,79,3279
+Kabupaten,Banjar,63,03,6303
+Kota,Banjarbaru,63,72,6372
+Kota,Banjarmasin,63,71,6371
+Kabupaten,Banjarnegara,33,04,3304
+Kabupaten,Bantaeng,73,03,7303
+Kabupaten,Bantul,34,02,3402
+Kabupaten,Banyuasin,16,07,1607
+Kabupaten,Banyumas,33,02,3302
+Kabupaten,Banyuwangi,35,10,3510
+Kabupaten,Barito Kuala,63,04,6304
+Kabupaten,Barito Selatan,62,04,6204
+Kabupaten,Barito Timur,62,13,6213
+Kabupaten,Barito Utara,62,05,6205
+Kabupaten,Barru,73,11,7311
+Kota,Batam,21,71,2171
+Kabupaten,Batang,33,25,3325
+Kabupaten,Batanghari,15,04,1504
+Kota,Batu,35,79,3579
+Kabupaten,Batu Bara,12,19,1219
+Kota,Bau Bau,74,72,7472
+Kota,Bekasi,32,75,3275
+Kabupaten,Bekasi,32,16,3216
+Kabupaten,Belitung,19,02,1902
+Kabupaten,Belitung Timur,19,06,1906
+Kabupaten,Belu,53,04,5304
+Kabupaten,Bener Meriah,11,17,1117
+Kabupaten,Bengkalis,14,03,1403
+Kabupaten,Bengkayang,61,07,6107
+Kota,Bengkulu,17,71,1771
+Kabupaten,Bengkulu Selatan,17,01,1701
+Kabupaten,Bengkulu Tengah,17,09,1709
+Kabupaten,Bengkulu Utara,17,03,1703
+Kabupaten,Berau,64,03,6403
+Kabupaten,Biak Numfor,91,06,9106
+Kabupaten,Bima,52,06,5206
+Kota,Bima,52,72,5272
+Kota,Binjai,12,75,1275
+Kabupaten,Bintan,21,01,2101
+Kabupaten,Bireuen,11,11,1111
+Kota,Bitung,71,72,7172
+Kabupaten,Blitar,35,05,3505
+Kota,Blitar,35,72,3572
+Kabupaten,Blora,33,16,3316
+Kabupaten,Boalemo,75,02,7502
+Kabupaten,Bogor,32,01,3201
+Kota,Bogor,32,71,3271
+Kabupaten,Bojonegoro,35,22,3522
+Kabupaten,Bolaang Mongondow,71,01,7101
+Kabupaten,Bolaang Mongondow Selatan,71,11,7111
+Kabupaten,Bolaang Mongondow Timur,71,10,7110
+Kabupaten,Bolaang Mongondow Utara,71,08,7108
+Kabupaten,Bombana,74,06,7406
+Kabupaten,Bondowoso,35,11,3511
+Kabupaten,Bone,73,08,7308
+Kabupaten,Bone Bolango,75,03,7503
+Kota,Bontang,64,74,6474
+Kabupaten,Boven Digoel,93,02,9302
+Kabupaten,Boyolali,33,09,3309
+Kabupaten,Brebes,33,29,3329
+Kota,Bukittinggi,13,75,1375
+Kabupaten,Buleleng,51,08,5108
+Kabupaten,Bulukumba,73,02,7302
+Kabupaten,Bulungan,65,01,6501
+Kabupaten,Bungo,15,08,1508
+Kabupaten,Buol,72,05,7205
+Kabupaten,Buru,81,04,8104
+Kabupaten,Buru Selatan,81,09,8109
+Kabupaten,Buton,74,04,7404
+Kabupaten,Buton Selatan,74,15,7415
+Kabupaten,Buton Tengah,74,14,7414
+Kabupaten,Buton Utara,74,10,7410
+Kabupaten,Ciamis,32,07,3207
+Kabupaten,Cianjur,32,03,3203
+Kabupaten,Cilacap,33,01,3301
+Kota,Cilegon,36,72,3672
+Kota,Cimahi,32,77,3277
+Kota,Cirebon,32,74,3274
+Kabupaten,Cirebon,32,09,3209
+Kabupaten,Dairi,12,11,1211
+Kabupaten,Deiyai,94,08,9408
+Kabupaten,Deli Serdang,12,07,1207
+Kabupaten,Demak,33,21,3321
+Kota,Denpasar,51,71,5171
+Kota,Depok,32,76,3276
+Kabupaten,Dharmasraya,13,10,1310
+Kabupaten,Dogiyai,94,06,9406
+Kabupaten,Dompu,52,05,5205
+Kabupaten,Donggala,72,03,7203
+Kota,Dumai,14,72,1472
+Kabupaten,Empat Lawang,16,11,1611
+Kabupaten,Ende,53,08,5308
+Kabupaten,Enrekang,73,16,7316
+Kabupaten,Fak Fak,92,03,9203
+Kabupaten,Flores Timur,53,06,5306
+Kabupaten,Garut,32,05,3205
+Kabupaten,Gayo Lues,11,13,1113
+Kabupaten,Gianyar,51,04,5104
+Kabupaten,Gorontalo,75,01,7501
+Kota,Gorontalo,75,71,7571
+Kabupaten,Gorontalo Utara,75,05,7505
+Kabupaten,Gowa,73,06,7306
+Kabupaten,Gresik,35,25,3525
+Kabupaten,Grobogan,33,15,3315
+Kabupaten,Gunung Mas,62,10,6210
+Kabupaten,Gunungkidul,34,03,3403
+Kota,Gunungsitoli,12,78,1278
+Kabupaten,Halmahera Barat,82,01,8201
+Kabupaten,Halmahera Selatan,82,04,8204
+Kabupaten,Halmahera Tengah,82,02,8202
+Kabupaten,Halmahera Timur,82,06,8206
+Kabupaten,Halmahera Utara,82,03,8203
+Kabupaten,Hulu Sungai Selatan,63,06,6306
+Kabupaten,Hulu Sungai Tengah,63,07,6307
+Kabupaten,Hulu Sungai Utara,63,08,6308
+Kabupaten,Humbang Hasundutan,12,16,1216
+Kabupaten,Indragiri Hilir,14,04,1404
+Kabupaten,Indragiri Hulu,14,02,1402
+Kabupaten,Indramayu,32,12,3212
+Kabupaten,Intan Jaya,94,07,9407
+Kota,Jakarta Barat,31,73,3173
+Kota,Jakarta Pusat,31,71,3171
+Kota,Jakarta Selatan,31,74,3174
+Kota,Jakarta Timur,31,75,3175
+Kota,Jakarta Utara,31,72,3172
+Kota,Jambi,15,71,1571
+Kabupaten,Jayapura,91,03,9103
+Kota,Jayapura,91,71,9171
+Kabupaten,Jayawijaya,95,01,9501
+Kabupaten,Jember,35,09,3509
+Kabupaten,Jembrana,51,01,5101
+Kabupaten,Jeneponto,73,04,7304
+Kabupaten,Jepara,33,20,3320
+Kabupaten,Jombang,35,17,3517
+Kabupaten,Kaimana,92,08,9208
+Kabupaten,Kampar,14,01,1401
+Kabupaten,Kapuas,62,03,6203
+Kabupaten,Kapuas Hulu,61,06,6106
+Kabupaten,Karanganyar,33,13,3313
+Kabupaten,Karangasem,51,07,5107
+Kabupaten,Karawang,32,15,3215
+Kabupaten,Karimun,21,02,2102
+Kabupaten,Karo,12,06,1206
+Kabupaten,Katingan,62,06,6206
+Kabupaten,Kaur,17,04,1704
+Kabupaten,Kayong Utara,61,11,6111
+Kabupaten,Kebumen,33,05,3305
+Kabupaten,Kediri,35,06,3506
+Kota,Kediri,35,71,3571
+Kabupaten,Keerom,91,11,9111
+Kabupaten,Kendal,33,24,3324
+Kota,Kendari,74,71,7471
+Kabupaten,Kepahiang,17,08,1708
+Kabupaten,Kepulauan Anambas,21,05,2105
+Kabupaten,Kepulauan Aru,81,07,8107
+Kabupaten,Kepulauan Mentawai,13,09,1309
+Kabupaten,Kepulauan Meranti,14,10,1410
+Kabupaten,Kepulauan Sangihe,71,03,7103
+Kabupaten,Kepulauan Selayar,73,01,7301
+Kabupaten,Kepulauan Seribu,31,01,3101
+Kabupaten,Kepulauan Siau Tagulandang Biaro (Sitaro),71,09,7109
+Kabupaten,Kepulauan Sula,82,05,8205
+Kabupaten,Kepulauan Talaud,71,04,7104
+Kabupaten,Kepulauan Tanimbar (Maluku Tenggara Barat),81,03,8103
+Kabupaten,Kepulauan Yapen,91,05,9105
+Kabupaten,Kerinci,15,01,1501
+Kabupaten,Ketapang,61,04,6104
+Kabupaten,Klaten,33,10,3310
+Kabupaten,Klungkung,51,05,5105
+Kabupaten,Kolaka,74,01,7401
+Kabupaten,Kolaka Timur,74,11,7411
+Kabupaten,Kolaka Utara,74,08,7408
+Kabupaten,Konawe,74,02,7402
+Kabupaten,Konawe Kepulauan,74,12,7412
+Kabupaten,Konawe Selatan,74,05,7405
+Kabupaten,Konawe Utara,74,09,7409
+Kabupaten,Kotabaru,63,02,6302
+Kota,Kotamobagu,71,74,7174
+Kabupaten,Kotawaringin Barat,62,01,6201
+Kabupaten,Kotawaringin Timur,62,02,6202
+Kabupaten,Kuantan Singingi,14,09,1409
+Kabupaten,Kubu Raya,61,12,6112
+Kabupaten,Kudus,33,19,3319
+Kabupaten,Kulon Progo,34,01,3401
+Kabupaten,Kuningan,32,08,3208
+Kabupaten,Kupang,53,01,5301
+Kota,Kupang,53,71,5371
+Kabupaten,Kutai Barat,64,07,6407
+Kabupaten,Kutai Kartanegara,64,02,6402
+Kabupaten,Kutai Timur,64,08,6408
+Kabupaten,Labuhanbatu,12,10,1210
+Kabupaten,Labuhanbatu Selatan,12,22,1222
+Kabupaten,Labuhanbatu Utara,12,23,1223
+Kabupaten,Lahat,16,04,1604
+Kabupaten,Lamandau,62,09,6209
+Kabupaten,Lamongan,35,24,3524
+Kabupaten,Lampung Barat,18,04,1804
+Kabupaten,Lampung Selatan,18,01,1801
+Kabupaten,Lampung Tengah,18,02,1802
+Kabupaten,Lampung Timur,18,07,1807
+Kabupaten,Lampung Utara,18,03,1803
+Kabupaten,Landak,61,08,6108
+Kabupaten,Langkat,12,05,1205
+Kota,Langsa,11,74,1174
+Kabupaten,Lanny Jaya,95,07,9507
+Kabupaten,Lebak,36,02,3602
+Kabupaten,Lebong,17,07,1707
+Kabupaten,Lembata,53,13,5313
+Kota,Lhokseumawe,11,73,1173
+Kabupaten,Lima Puluh Kota,13,07,1307
+Kabupaten,Lingga,21,04,2104
+Kabupaten,Lombok Barat,52,01,5201
+Kabupaten,Lombok Tengah,52,02,5202
+Kabupaten,Lombok Timur,52,03,5203
+Kabupaten,Lombok Utara,52,08,5208
+Kota,Lubuk Linggau,16,73,1673
+Kabupaten,Lumajang,35,08,3508
+Kabupaten,Luwu,73,17,7317
+Kabupaten,Luwu Timur,73,24,7324
+Kabupaten,Luwu Utara,73,22,7322
+Kabupaten,Madiun,35,19,3519
+Kota,Madiun,35,77,3577
+Kabupaten,Magelang,33,08,3308
+Kota,Magelang,33,71,3371
+Kabupaten,Magetan,35,20,3520
+Kabupaten,Mahakam Ulu,64,11,6411
+Kabupaten,Majalengka,32,10,3210
+Kabupaten,Majene,76,05,7605
+Kota,Makassar,73,71,7371
+Kabupaten,Malaka,53,21,5321
+Kabupaten,Malang,35,07,3507
+Kota,Malang,35,73,3573
+Kabupaten,Malinau,65,02,6502
+Kabupaten,Maluku Barat Daya,81,08,8108
+Kabupaten,Maluku Tengah,81,01,8101
+Kabupaten,Maluku Tenggara,81,02,8102
+Kabupaten,Mamasa,76,03,7603
+Kabupaten,Mamberamo Raya,91,20,9120
+Kabupaten,Mamberamo Tengah,95,05,9505
+Kabupaten,Mamuju,76,02,7602
+Kabupaten,Mamuju Tengah,76,06,7606
+Kota,Manado,71,71,7171
+Kabupaten,Mandailing Natal,12,13,1213
+Kabupaten,Manggarai,53,10,5310
+Kabupaten,Manggarai Barat,53,15,5315
+Kabupaten,Manggarai Timur,53,19,5319
+Kabupaten,Manokwari,92,02,9202
+Kabupaten,Manokwari Selatan,92,11,9211
+Kabupaten,Mappi,93,03,9303
+Kabupaten,Maros,73,09,7309
+Kota,Mataram,52,71,5271
+Kabupaten,Maybrat,92,10,9210
+Kota,Medan,12,71,1271
+Kabupaten,Melawi,61,10,6110
+Kabupaten,Mempawah,61,02,6102
+Kabupaten,Merangin,15,02,1502
+Kabupaten,Merauke,93,01,9301
+Kabupaten,Mesuji,18,11,1811
+Kota,Metro,18,72,1872
+Kabupaten,Mimika,94,04,9404
+Kabupaten,Minahasa,71,02,7102
+Kabupaten,Minahasa Selatan,71,05,7105
+Kabupaten,Minahasa Tenggara,71,07,7107
+Kabupaten,Minahasa Utara,71,06,7106
+Kabupaten,Mojokerto,35,16,3516
+Kota,Mojokerto,35,76,3576
+Kabupaten,Morowali,72,06,7206
+Kabupaten,Morowali Utara,72,12,7212
+Kabupaten,Muara Enim,16,03,1603
+Kabupaten,Muaro Jambi,15,05,1505
+Kabupaten,Muko Muko,17,06,1706
+Kabupaten,Muna,74,03,7403
+Kabupaten,Muna Barat,74,13,7413
+Kabupaten,Murung Raya,62,12,6212
+Kabupaten,Musi Banyuasin,16,06,1606
+Kabupaten,Musi Rawas,16,05,1605
+Kabupaten,Musi Rawas Utara,16,13,1613
+Kabupaten,Nabire,94,01,9401
+Kabupaten,Nagan Raya,11,15,1115
+Kabupaten,Nagekeo,53,16,5316
+Kabupaten,Natuna,21,03,2103
+Kabupaten,Nduga,95,08,9508
+Kabupaten,Ngada,53,09,5309
+Kabupaten,Nganjuk,35,18,3518
+Kabupaten,Ngawi,35,21,3521
+Kabupaten,Nias,12,04,1204
+Kabupaten,Nias Barat,12,25,1225
+Kabupaten,Nias Selatan,12,14,1214
+Kabupaten,Nias Utara,12,24,1224
+Kabupaten,Nunukan,65,03,6503
+Kabupaten,Ogan Ilir,16,10,1610
+Kabupaten,Ogan Komering Ilir,16,02,1602
+Kabupaten,Ogan Komering Ulu,16,01,1601
+Kabupaten,Ogan Komering Ulu Selatan,16,09,1609
+Kabupaten,Ogan Komering Ulu Timur,16,08,1608
+Kabupaten,Pacitan,35,01,3501
+Kota,Padang,13,71,1371
+Kabupaten,Padang Lawas,12,21,1221
+Kabupaten,Padang Lawas Utara,12,20,1220
+Kota,Padang Panjang,13,74,1374
+Kabupaten,Padang Pariaman,13,05,1305
+Kota,Padangsidimpuan,12,77,1277
+Kota,Pagar Alam,16,72,1672
+Kabupaten,Pahuwato,75,04,7504
+Kabupaten,Pakpak Bharat,12,15,1215
+Kota,Palangkaraya,62,71,6271
+Kota,Palembang,16,71,1671
+Kota,Palopo,73,73,7373
+Kota,Palu,72,71,7271
+Kabupaten,Pamekasan,35,28,3528
+Kabupaten,Pandeglang,36,01,3601
+Kabupaten,Pangandaran,32,18,3218
+Kabupaten,Pangkajene Kepulauan,73,10,7310
+Kota,Pangkal Pinang,19,71,1971
+Kabupaten,Paniai,94,03,9403
+Kota,Pare Pare,73,72,7372
+Kota,Pariaman,13,77,1377
+Kabupaten,Parigi Moutong,72,08,7208
+Kabupaten,Pasaman,13,08,1308
+Kabupaten,Pasaman Barat,13,12,1312
+Kabupaten,Pasangkayu (Mamuju Utara),76,01,7601
+Kabupaten,Paser,64,01,6401
+Kabupaten,Pasuruan,35,14,3514
+Kota,Pasuruan,35,75,3575
+Kabupaten,Pati,33,18,3318
+Kota,Payakumbuh,13,76,1376
+Kabupaten,Pegunungan Arfak,92,12,9212
+Kabupaten,Pegunungan Bintang,95,02,9502
+Kabupaten,Pekalongan,33,26,3326
+Kota,Pekalongan,33,75,3375
+Kota,Pekanbaru,14,71,1471
+Kabupaten,Pelalawan,14,05,1405
+Kabupaten,Pemalang,33,27,3327
+Kota,Pematangsiantar,12,72,1272
+Kabupaten,Penajam Paser Utara,64,09,6409
+Kabupaten,Penukal Abab Lematang Ilir,16,12,1612
+Kabupaten,Pesawaran,18,09,1809
+Kabupaten,Pesisir Barat,18,13,1813
+Kabupaten,Pesisir Selatan,13,01,1301
+Kabupaten,Pidie,11,07,1107
+Kabupaten,Pidie Jaya,11,18,1118
+Kabupaten,Pinrang,73,15,7315
+Kabupaten,Polewali Mandar,76,04,7604
+Kabupaten,Ponorogo,35,02,3502
+Kota,Pontianak,61,71,6171
+Kabupaten,Poso,72,02,7202
+Kota,Prabumulih,16,74,1674
+Kabupaten,Pringsewu,18,10,1810
+Kabupaten,Probolinggo,35,13,3513
+Kota,Probolinggo,35,74,3574
+Kabupaten,Pulang Pisau,62,11,6211
+Kabupaten,Pulau Morotai,82,07,8207
+Kabupaten,Pulau Taliabu,82,08,8208
+Kabupaten,Puncak,94,05,9405
+Kabupaten,Puncak Jaya,94,02,9402
+Kabupaten,Purbalingga,33,03,3303
+Kabupaten,Purwakarta,32,14,3214
+Kabupaten,Purworejo,33,06,3306
+Kabupaten,Raja Ampat,92,05,9205
+Kabupaten,Rejang Lebong,17,02,1702
+Kabupaten,Rembang,33,17,3317
+Kabupaten,Rokan Hilir,14,07,1407
+Kabupaten,Rokan Hulu,14,06,1406
+Kabupaten,Rote Ndao,53,14,5314
+Kota,Sabang,11,72,1172
+Kabupaten,Sabu Raijua,53,20,5320
+Kota,Salatiga,33,73,3373
+Kota,Samarinda,64,72,6472
+Kabupaten,Sambas,61,01,6101
+Kabupaten,Samosir,12,17,1217
+Kabupaten,Sampang,35,27,3527
+Kabupaten,Sanggau,61,03,6103
+Kabupaten,Sarmi,91,10,9110
+Kabupaten,Sarolangun,15,03,1503
+Kota,Sawahlunto,13,73,1373
+Kabupaten,Sekadau,61,09,6109
+Kabupaten,Seluma,17,05,1705
+Kabupaten,Semarang,33,22,3322
+Kota,Semarang,33,74,3374
+Kabupaten,Seram Bagian Barat,81,06,8106
+Kabupaten,Seram Bagian Timur,81,05,8105
+Kota,Serang,36,73,3673
+Kabupaten,Serang,36,04,3604
+Kabupaten,Serdang Bedagai,12,18,1218
+Kabupaten,Seruyan,62,07,6207
+Kabupaten,Siak,14,08,1408
+Kota,Sibolga,12,73,1273
+Kabupaten,Sidenreng Rappang,73,14,7314
+Kabupaten,Sidoarjo,35,15,3515
+Kabupaten,Sigi,72,10,7210
+Kabupaten,Sijunjung,13,03,1303
+Kabupaten,Sikka,53,07,5307
+Kabupaten,Simalungun,12,08,1208
+Kabupaten,Simeulue,11,09,1109
+Kota,Singkawang,61,72,6172
+Kabupaten,Sinjai,73,07,7307
+Kabupaten,Sintang,61,05,6105
+Kabupaten,Situbondo,35,12,3512
+Kabupaten,Sleman,34,04,3404
+Kabupaten,Solok,13,02,1302
+Kota,Solok,13,72,1372
+Kabupaten,Solok Selatan,13,11,1311
+Kabupaten,Soppeng,73,12,7312
+Kabupaten,Sorong,92,01,9201
+Kota,Sorong,92,71,9271
+Kabupaten,Sorong Selatan,92,04,9204
+Kabupaten,Sragen,33,14,3314
+Kabupaten,Subang,32,13,3213
+Kota,Subulussalam,11,75,1175
+Kota,Sukabumi,32,72,3272
+Kabupaten,Sukabumi,32,02,3202
+Kabupaten,Sukamara,62,08,6208
+Kabupaten,Sukoharjo,33,11,3311
+Kabupaten,Sumba Barat,53,12,5312
+Kabupaten,Sumba Barat Daya,53,18,5318
+Kabupaten,Sumba Tengah,53,17,5317
+Kabupaten,Sumba Timur,53,11,5311
+Kabupaten,Sumbawa,52,04,5204
+Kabupaten,Sumbawa Barat,52,07,5207
+Kabupaten,Sumedang,32,11,3211
+Kabupaten,Sumenep,35,29,3529
+Kota,Sungai Penuh,15,72,1572
+Kabupaten,Supiori,91,19,9119
+Kota,Surabaya,35,78,3578
+Kota,Surakarta,33,72,3372
+Kabupaten,Tabalong,63,09,6309
+Kabupaten,Tabanan,51,02,5102
+Kabupaten,Takalar,73,05,7305
+Kabupaten,Tambrauw,92,09,9209
+Kabupaten,Tana Tidung,65,04,6504
+Kabupaten,Tana Toraja,73,18,7318
+Kabupaten,Tanah Bumbu,63,10,6310
+Kabupaten,Tanah Datar,13,04,1304
+Kabupaten,Tanah Laut,63,01,6301
+Kota,Tangerang,36,71,3671
+Kabupaten,Tangerang,36,03,3603
+Kota,Tangerang Selatan,36,74,3674
+Kabupaten,Tanggamus,18,06,1806
+Kota,Tanjung Balai,12,74,1274
+Kabupaten,Tanjung Jabung Barat,15,06,1506
+Kabupaten,Tanjung Jabung Timur,15,07,1507
+Kota,Tanjung Pinang,21,72,2172
+Kabupaten,Tapanuli Selatan,12,03,1203
+Kabupaten,Tapanuli Tengah,12,01,1201
+Kabupaten,Tapanuli Utara,12,02,1202
+Kabupaten,Tapin,63,05,6305
+Kota,Tarakan,65,71,6571
+Kota,Tasikmalaya,32,78,3278
+Kabupaten,Tasikmalaya,32,06,3206
+Kota,Tebing Tinggi,12,76,1276
+Kabupaten,Tebo,15,09,1509
+Kabupaten,Tegal,33,28,3328
+Kota,Tegal,33,76,3376
+Kabupaten,Teluk Bintuni,92,06,9206
+Kabupaten,Teluk Wondama,92,07,9207
+Kabupaten,Temanggung,33,23,3323
+Kota,Ternate,82,71,8271
+Kota,Tidore Kepulauan,82,72,8272
+Kabupaten,Timor Tengah Selatan,53,02,5302
+Kabupaten,Timor Tengah Utara,53,03,5303
+Kabupaten,Toba,12,12,1212
+Kabupaten,Tojo Una Una,72,09,7209
+Kabupaten,Toli Toli,72,04,7204
+Kabupaten,Tolikara,95,04,9504
+Kota,Tomohon,71,73,7173
+Kabupaten,Toraja Utara,73,26,7326
+Kabupaten,Trenggalek,35,03,3503
+Kota,Tual,81,72,8172
+Kabupaten,Tuban,35,23,3523
+Kabupaten,Tulang Bawang,18,05,1805
+Kabupaten,Tulang Bawang Barat,18,12,1812
+Kabupaten,Tulungagung,35,04,3504
+Kabupaten,Wajo,73,13,7313
+Kabupaten,Wakatobi,74,07,7407
+Kabupaten,Waropen,91,15,9115
+Kabupaten,Way Kanan,18,08,1808
+Kabupaten,Wonogiri,33,12,3312
+Kabupaten,Wonosobo,33,07,3307
+Kabupaten,Yahukimo,95,03,9503
+Kabupaten,Yalimo,95,06,9506
+Kota,Yogyakarta,34,71,3471

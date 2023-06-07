@@ -11,5 +11,10 @@
   "provinsi": "Provinsi (Province)",
   "kab-kot": "Kabupaten/Kota (Regency)",
   "kecamatan": "Kecamatan (District)",
-  "desa-kelurahan": "Desa/Kelurahan (Village)"
+  "desa-kelurahan": "Desa/Kelurahan (Village)",
+  "---": {
+    "type": "separator",
+    "title": "Appendix"
+  },
+  "references": "References"
 }

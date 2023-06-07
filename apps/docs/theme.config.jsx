@@ -34,7 +34,11 @@ const config = {
   banner: {
     text: (
       <p>
-        The current data is accurate only up to <strong>2019.</strong>
+        🎉 We just updated our database with the latest Indonesian area code
+        database according to{' '}
+        <a href="https://backend.kemendagri.go.id/documents/KEPMENDAGRI/2022/1672910188Kepmendagri%20100.1.1-6117%20Tahun%202022.pdf">
+          Kepmendagri RI No. 100.1.1-6117 Tahun 2022
+        </a>
       </p>
     ),
   },

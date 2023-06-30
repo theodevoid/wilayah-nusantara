@@ -1,5 +1,5 @@
 # Wilayah Nusantara API
-[Wilayah Nusantara](https://api.wilayah-nusantara.id/) is an open source API that provides access to Indonesian province, regencies, districts, and villages data. This API allows developers to fetch specific location information for their applications or projects. Note that this project is still currently under construction, and the current data is accurate only up to 2019. 
+[Wilayah Nusantara](https://api.wilayah-nusantara.id/) is an open source API that provides access to Indonesian province, regencies, districts, and villages data. This API allows developers to fetch specific location information for their applications or projects. The current data is accurate up to 2022.
 
 For full documentation visit https://docs.wilayah-nusantara.id
 

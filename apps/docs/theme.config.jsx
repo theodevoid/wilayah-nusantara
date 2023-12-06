@@ -34,11 +34,11 @@ const config = {
   banner: {
     text: (
       <p>
-        🎉 We just updated our database with the latest Indonesian area code
-        database according to{' '}
-        <a href="https://backend.kemendagri.go.id/documents/KEPMENDAGRI/2022/1672910188Kepmendagri%20100.1.1-6117%20Tahun%202022.pdf">
-          Kepmendagri RI No. 100.1.1-6117 Tahun 2022
-        </a>
+        ⚠️ Due to financial issues, our free hosted API at{' '}
+        <a href="https://api.wilayah-nusantara.id">
+          https://api.wilayah-nusantara.id
+        </a>{' '}
+        has been shut down. ⚠️
       </p>
     ),
   },

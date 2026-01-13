@@ -1,3 +1,30 @@
+# 🚨 Project Notice — This Repository Has Been Discontinued
+
+> **TL;DR:** This repository is now archived and will no longer be maintained by me (@theodevoid).  
+> Wilayah Nusantara has moved to a new home and will continue its development there by @leonurium.
+
+👉 **NEW REPOSITORY:**  
+**https://github.com/leonurium/konoland-api**
+
+All future updates, bug fixes, data refreshes, and new features live in the new repository.
+
+---
+
+## Why the Move?
+
+This repository has entered its **legacy era**
+We migrated Wilayah Nusantara into a new repository to:
+
+- Improve project structure & maintainability  
+- Refresh data pipelines  
+- Prepare for future features  
+- Support newer and more accurate datasets  
+
+This repo is kept for historical reference only.  
+No further updates will be pushed here.
+
+---
+
 # Wilayah Nusantara API
 [Wilayah Nusantara](https://api.wilayah-nusantara.id/) is an open source API that provides access to Indonesian province, regencies, districts, and villages data. This API allows developers to fetch specific location information for their applications or projects. The current data is accurate up to 2022.
 

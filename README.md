@@ -1,7 +1,7 @@
 # 🚨 Project Notice — This Repository Has Been Discontinued
 
-> **TL;DR:** This repository is now archived and will no longer be maintained by me (@theodevoid).  
-> Wilayah Nusantara has moved to a new home and will continue its development there by @leonurium.
+> **TL;DR:** This repository is now archived and will no longer be maintained by me ([@theodevoid](https://github.com/theodevoid)).  
+> Wilayah Nusantara has moved to a new home and will continue its development there by [@leonurium](https://github.com/leonurium).
 
 👉 **NEW REPOSITORY:**  
 **https://github.com/leonurium/konoland-api**

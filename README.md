@@ -10,16 +10,6 @@ All future updates, bug fixes, data refreshes, and new features live in the new 
 
 ---
 
-## Why the Move?
-
-This repository has entered its **legacy era**
-We migrated Wilayah Nusantara into a new repository to:
-
-- Improve project structure & maintainability  
-- Refresh data pipelines  
-- Prepare for future features  
-- Support newer and more accurate datasets  
-
 This repo is kept for historical reference only.  
 No further updates will be pushed here.
 
